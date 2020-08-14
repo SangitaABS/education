@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+div{
+    width: 300px;
+    background-color: #f00;
+    height: 300px;
+    padding: 30px;
+}
+
+header,footer,nav, section, article
+{
+    background-color: #000;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    
+    display: inline-block;
+    width: 60%;
+}
+section,article{
+    height: 195px;
+    font-size: 16px;
+}
+aside {
+    display: inline-block;
+    width: calc(40% - 4px);
+    background-color: #000;
+    height: 400px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    padding: 30px 10px;
+}
+
+

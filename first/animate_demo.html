@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: pink;
+        }
+        #road {
+            border-bottom: 7px solid black;
+        }
+        #runner {
+            background: url("https://i.pinimg.com/originals/7d/59/5a/7d595a64c99a634d94759de8096cca14.png");
+            width: 400px;
+            height: 599px;
+            animation: walk 1s steps(16) infinite,
+            forward 5s linear infinite;
+        }
+        @keyframes walk {
+            0% {
+                background-position: 0px;
+            }
+            100%{
+                background-position: 1601px;
+            }
+        }
+        @keyframes forward {
+            0% {
+                transform: translateX(-100px);
+            }
+            100%{
+                transform: translateX(1200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="runner"></div>
+    <div id="road"></div>
+</body>
+</html>

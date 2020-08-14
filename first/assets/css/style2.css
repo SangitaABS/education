@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: gray;
+}
+div
+{
+    background-color: #99ff5d;
+    height: 50px;
+}
+header
+{
+    height: 100px;
+    background-color: #5856ff;
+}
+ul { font-size: 0; }
+li
+{
+
+        height: 50px;
+        width: 25%;
+        list-style-type: none;
+        display: inline-block;
+        font-size: 16px;
+}
+li.a{ background-color: #fc60e6; }
+li.b{ background-color: #ef48d6; }
+li.c{ background-color: #e862d5; }
+li.d{ background-color: #e337c7; }
+main
+{
+    font-size: 0;
+    
+}
+section
+{
+    background-color: #ff5a5a;
+    height: 600px;
+    width: 60%;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+aside{
+    width: calc(40% - 4px);
+    display: inline-block;
+}
+
+article {
+    height: 300px;
+    font-size: 16px;
+}
+
+article.a{
+    background-color: #3c3c3c;
+    
+}
+.b{
+    background-color: #1a1a1a;
+}
+
+footer{
+    background-color: #2f60bd;
+    height: 100px;
+}

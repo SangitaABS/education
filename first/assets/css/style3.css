@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    color: #000000;
+}
+section
+{
+    width: 70%;
+    display: inline-block;
+}
+header
+{
+    background-color:#ffc9ff ;
+    height: 70px;
+}
+nav
+{
+    background-color:#9a14ec ;
+    height: 40px;
+}
+main
+{
+    background-color: #ffffff;
+    height: 200px;
+}
+footer
+{
+     background-color: #cb87f5;
+     height: 90px;
+}
+aside
+{
+    display: inline-block; 
+    background-color: #ff99ff;
+     width:calc(30% - 4px);
+     height: 400px;
+     padding: 100px;
+     vertical-align: top;
+}

@@ -1,0 +1,50 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #2d2aff;
+    border-radius: 15px;
+  padding: 10px;
+  border: #4d3de4;
+
+}
+.headfoot
+{
+    background-color: #3c82ff;
+    height: 50px;
+    margin: 2px;
+    
+}
+.sheadfoot
+{
+    background-color: #ddb285;
+    height: 30px;
+    margin: 2px;
+}
+article
+{
+    height: 140px;
+    background-color: #ddb285;
+}
+section
+{
+    display: inline-block;
+    width: 40%;
+    height: 250px;
+    background-color: #3c82ff;
+}
+nav, aside
+{
+     background-color: #3c82ff;
+     height: 250px;
+     width: calc(30% - 4px);
+     display: inline-block;
+     vertical-align: top;
+
+     
+}
+
+     

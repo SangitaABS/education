@@ -1,0 +1,830 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+.img{
+    max-width: 100%;
+    
+}
+/*common classes*/
+.section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-sm{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bg-grey{
+    background-color: #f5f5f5;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.font-gray {
+    color: #707070;
+}
+.font18 {
+    font-size: 18px;
+}
+.btn{
+    padding: 20px 45px;
+    border-radius: 40px;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.btn-inblock{
+    width: 30%;
+}
+.section-title {
+    padding:20px 0;
+    text-align: center;
+    font-size: 32px;
+}
+.section-title.left-asign {
+    text-align: left;
+}
+
+.section-sub-title {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.section-sub-title.left-align {
+    text-align: left;
+}
+
+
+/* //Common classes */
+
+/* Top Most Bar */
+
+.topbar {
+    color: #fff;
+    background: #707070;
+    padding: 10px 0;
+}
+.top-title {
+    text-align: center;
+}
+
+/* Head Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+.logo {
+    display: flex;
+    /*width: 20%;*/
+}
+.logo1 {
+    text-decoration: none;
+}
+.logotext {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+}
+.menu-icon {
+    padding: 10px 10px;
+}
+.nav-item {
+    padding-right: 30px;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    font-weight: bold;
+}
+.nav-link {
+    text-decoration: none;
+    color: #000;
+}
+.nav-img {
+    height: 20px;
+    width: 20px;
+}
+
+/* Banner Section*/
+
+.banner {
+    height: 600px;
+    background: url(../images/jason-briscoe-5IGprlBT5g4-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.banner-content {
+    color: #fff;
+    margin-left: 80px; 
+}
+.banner-title {
+    font-size: 40px;
+}
+.banner-info {
+    font-size: 32px;
+    margin: 5px 0;
+    line-height: 40px;
+}
+
+/* Section Top  */
+
+.section-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-content {
+    display: flex;
+    width: 32%;
+    background: #E4E4E4;
+    padding: 20px 0;
+}
+.content-box{
+    padding: 5px 0;
+    padding-left:20px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.home.product-image-box {
+    width: 50%;
+}
+.product_image {
+    height: auto;
+    width:  100%;
+    background: #E4E4E4;
+}
+.shopnow {
+    color: #ff0000;
+}
+
+  /* Cards Section  */
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.card_image {
+    width: 50%;
+}
+
+.card_content {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+.card_text{
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    width: calc(100% + 100px);
+    margin-left: -100px;
+}
+
+/*.card-title {
+    padding: 0 10px;
+    margin-bottom: 20px;
+}*/
+.card_heading, .card_info {
+    margin-bottom: 5px;
+}
+.card-reverse {
+    flex-direction: row-reverse;
+}
+.card-reverse .card_text{
+    margin-left: 0;
+}
+.card-bottom {
+    display: flex;
+    padding: 10px 0;
+}
+.card_info2 {
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16);
+    padding: 30px 20px;
+    text-align: center;
+    margin: 5px;
+    width: 33%;
+}
+
+/* Features Products */
+
+.section-info {
+    text-align: center ;
+    margin: 20px 0 30px;
+}
+.section-body {
+    padding: 20px 0;
+}
+.products {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.product {
+    width: 24%;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.product-price {
+    color: #f00;
+    font-size: 22px;
+}
+.product-sub-content {
+    display: flex;
+    justify-content: space-between;
+}
+.sale-in {
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: 20px;
+}
+.sale-out {
+    position: relative;
+}
+
+.sale {
+    padding: 5px 20px;
+    background-color: #848484;
+}
+
+/* Guarantee Section */
+
+.guarantee-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Review Section  */
+
+.review-img {
+    height: 196px;
+    width: 196px;
+}
+.section-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px 0;
+}
+.arrow-img {
+    height: 50px;
+    width: 50px;
+}
+
+/* FAQ Section  */
+.faq-list {
+    list-style-type: none;
+}
+.faq-ques {
+    background-image: url(../images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 30px 0;
+}
+
+.active .faq-ques{
+    background-image: url(../images/minus.png);
+    background-repeat: no-repeat;
+}
+.faq-ans {
+    display: none;
+}
+.active .faq-ans {
+    display: block
+}
+
+
+/* Offer Section  */
+
+.offer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-bound {
+    list-style-type: none;
+    display: flex;
+    font-size: 40px;
+    padding: 10px;
+}
+.time-list {
+    padding: 2px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.offer-btn {
+    margin: 10px 0;
+    width: 20%;
+}
+
+/* Feedback Section  */
+
+.feedback-content {
+    padding: 0 150px;
+}
+
+.feedback-box {
+    width: 55%;
+    padding: 25px 45px;
+    margin:0 10px;
+    border-radius: 40px;  
+    font-style: italic;
+}
+.Subscribe {
+    width: 40%;
+}
+
+/* Footer Section  */
+
+
+.footer-inner {
+    display: flex;
+    padding: 40px 0;
+}
+.menu-list {
+    list-style-type: none;
+    padding: 10px 0;
+}
+.footer-menu {
+    width: 25%;
+}
+.menu-list-item {
+    padding: 5px 0;
+}
+.social-menu-list{
+    display: flex;
+}  
+.social-media {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+}
+/*// Home Page Section Terminated here */
+
+/* Products Page Guide Section Start Here */
+/* Top Section */
+.top-info {
+    padding: 10px 120px;
+    text-align: center;
+}
+/* Icon Section */
+.icon-list-box {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.icon-list {
+    text-align: center;
+}
+.icon-content {
+    height: 55px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+/* Products Section */
+.products-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Left Side */
+.left-section {
+    width: 25%;
+    padding-bottom: 10px;
+}
+.buying-section-box {
+    padding-top: 40px;
+}
+.buying-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 10px 0;
+    /*padding-right: 10px;*/
+}
+.product-image-box {
+    width: 35%;
+}
+
+.btm-brdr {
+    border-bottom: 2px solid #848484;
+}
+/* Right side */
+.right-section {
+    width: 75%;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.buying.product {
+    width: 32%;
+    padding-top: 20px;
+    /*padding-bottom: 30px;*/
+}
+/*.buying.content-box {
+    display: flex; 
+    justify-content: space-between;  
+}*/
+.home-product-link {
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+}
+.home-link {
+    text-decoration: none;
+    color: #000;
+}
+.load-more {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 40px;
+}
+
+.load-more-link {
+    color: #707070;
+} 
+
+/* //Products Page Guide Section terminated Here */
+
+/* Product Details Section start Here */
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Left Section of Product Details */
+.aside-image {
+    width: 35%;
+}
+/* Central Section of Product Details */
+.middle-content {
+    width: 35%;
+    padding: 0 10px;
+}
+
+.product-details {
+    padding: 10px 0;
+}
+.rating-info {
+    padding-left: 30px;
+}
+.price-link {
+    text-decoration: none;
+    color: #ff0000;
+}
+.productColorPackingInfo {
+    padding: 10px 0;
+}
+.product__sub__info {
+    width: 50%;
+    border: none;
+    font-weight: bold;
+}
+/* radio button to square box transformation */
+.product-color-item {
+    display: inline-block;
+    margin-right: 5px;
+    border: 2px solid #848484;
+}
+.color-box {
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+}
+.product-description {
+    padding-bottom: 20px;
+}
+
+/* Right Section of Product Details */
+
+.aside-content {
+    width: 30%;
+}
+.content-item {
+    padding: 20px 25px;
+    border: 2px solid #848484;
+}
+.shipping {
+    display: inline;
+}
+.stock-info {
+    padding: 5px 0;
+    color: #00C20D;
+}
+.quantity-label {
+    padding: 10px 0;
+}
+.quantity__control-btn {
+    border: none;
+    background-color: #fff;
+
+}
+.quantity__image {
+    width: 20px;
+    height: 20px;
+}
+.quantity__value {
+    padding: 20px;
+}
+.buy-btn {
+    margin: 10px 0;
+}
+.buy-and-cart-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+.product-detail.social-media{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+.share-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.share-info {
+    margin-right: 10px;
+}
+
+.gift-card-option {
+    margin-right: 5px;
+}
+
+/* Bottom Gallery Section */
+.img-gallery-section {
+    width: 100%;
+    display: flex;
+}
+.img-gallery {
+    width: 25%;
+    margin: 5px;
+}
+/* Comments and review Section */
+/* Left corner of review */
+.comment-review-box {
+    padding: 20px 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+}
+.cmnt-revw-heading {
+    text-align: center;
+}
+.comment-review {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+.cmnt-left-section {
+    padding:0 50px;
+    width: 60%;
+}
+.review-list {
+    list-style-type: none;
+}
+.review-list-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.rating {
+    padding-right: 100px;
+}
+
+/* Right Corner of Feedback */
+.cmnt-right-section {
+    width: 40%;
+    padding:0 40px;
+    border-left: 2px solid #848484;
+}
+.cmnt-title {
+    margin-bottom: 10px;
+}
+.cmnt-sub-title, .rating-box {
+    padding: 15px 0;
+}
+.cmnt-box-title {
+    padding: 30px 0;
+}
+.feedback-cmnt {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+.cmnt-sbmt {
+    width: 50%;
+    margin: 10px 0;
+}
+/* //Product Details Section terminated Here */
+
+
+/* About Us Section start Here */
+.about-us-sub-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.about-us-sub-info {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.about-us-content {
+    display: flex;
+}
+.about-us-sub-content {
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16);
+    padding: 40px 20px;
+    text-align: center;
+    margin: 5px;
+    width: 33%;
+}
+/* //About Us Section terminated Here */
+
+
+/* Contact Section start Here */
+.contact-info {
+    text-align: center;
+    font-size: 18px;
+}
+.contact-sub-section {
+    display: flex;
+    padding: 10px 0;
+}
+.contact-form {
+    width: 50%;
+}
+.form-content {
+    width: 48%;
+    padding: 25px 45px;
+    border-radius: 40px;  
+    font-style: italic;
+    border: 1px solid #707070;
+}
+.feedback-inline-block {
+    width: 96%;
+    margin: 10px 0;
+}
+.aside-contact {
+    padding: 0 33px;
+}
+.aside-contact-info {
+    display: flex;
+    padding: 10px 0;
+}
+.contact-sub-info {
+    margin-bottom: 5px;
+}
+.contact-icon {
+    margin-right: 20px;
+}
+
+/* Contact Section terminated Here */
+
+/* Cart Section Start Here */
+.cart__section {
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16);
+    padding: 40px 60px;
+    background-color: #fff;
+}
+.cart__main__content {
+    display: flex;
+    justify-content: space-between;
+}
+.cart__content {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.shippingPriceInfo {
+    padding-bottom: 30px;
+}
+.shipping-info.no-padding {
+    padding: 0;
+}
+.product__sub__info.non-bold {
+    font-weight: normal;
+}
+.quantity.padding20px {
+    padding: 20px 0;
+}
+.cart__content.blank {
+    visibility: hidden;
+}
+.cart__more__info {
+    align-items: flex-end;
+}
+.cart__sub__info {
+    text-align: right;
+    text-decoration: line-through;
+    color: #C5C5C5;
+}
+.RemoveFromCart {
+    padding: 20px 0;
+    color: #707070;
+}
+.delete__icon__img {
+    border: none;
+    background-color: #fff;
+}
+/* Cart Section terminated Here */
+
+/* Checkout Section start Here */
+.checkout__section {
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    width: 100%;
+}
+.shippingCheckoutForm {
+    padding: 50px 60px;
+}
+.shippingInfo__content, .DeliveryMethod {
+    width: 48%;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    border: 1px solid #707070;
+}
+.DeliveryPayment {
+    display: flex;
+}
+.Delivery, .Payment {
+    width: 50%;
+}
+.DeliveryMethod {
+    display: block;
+    width: 96%;
+}
+.DeliveryMethod__info {
+    display: inline;
+}
+/* Checkout Section terminated Here */
+
+
+
+
+/*.product-detail.menu-list-item{
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+}
+.product-detail.social-media{
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+}
+.product-detail.menu-list-item{
+    -webkit-filter: hue-rotate(180deg);
+        filter: hue-rotate(180deg);
+}
+.product-detail.social-media{
+    -webkit-filter: hue-rotate(180deg);
+        filter: hue-rotate(180deg);
+}*/

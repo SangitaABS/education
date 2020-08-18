@@ -369,6 +369,7 @@ body {
     width: 55%;
     padding: 25px 45px;
     margin:0 10px;
+    border-width: 1px;
     border-radius: 40px;  
     font-style: italic;
 }

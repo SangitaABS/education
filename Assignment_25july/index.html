@@ -26,13 +26,25 @@
             <a class="logo1" href="#">
                 <h2 class="logotext">LOGO</h2>
             </a>
-            <div class="menu-icon"><i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+            <div class="menu-icon dropdown"><i class="fa fa-sort-desc" aria-hidden="true"></i>
+                <!-- Dropdown menu -->
+                    <div class="dropdown-content">
+                        <a href="#"><h3 class="dropdown-content__title">Select category</h3></a>
+                        <a href="#">Category 1</a>
+                        <a href="#">Category 2</a>
+                        <a href="#">Category 3</a>
+                        <a href="#">Category 4</a>
+                        <a href="#">Category 5</a>
+                        <a href="#">Category 6</a>
+                        <a href="#">Category 7</a>
+                    </div>
+            </div>
         </div>
 
         <!--Navigation Bar -->
         <nav class="nav">
             <ul class="navbar">
-                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link active" href="products-page.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link" href="buying-guide.html">BUYING GUIDE</a></li>
                 <li class="nav-item"><a class="nav-link" href="about-us.html">WHY HOLON</a></li>
                 <li class="nav-item"><a class="nav-link" href="community.html">COMMUNITY</a></li>
@@ -44,7 +56,18 @@
         <div class="header-right logo">
             <ul class="navbar">
                 <li class="nav-item"><a class="nav-link" href="#"><img class="nav-img" src="assets/images/search.png"></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><img class="nav-img" src="assets/images/user.png"></a></li>
+
+                <div class="dropdown">
+                    <li class="nav-item"><a class="nav-link" href="#"><img class="nav-img" src="assets/images/user.png"></a></li>
+                    <div class="dropdown-content float-right">
+                        <a href="#"><h3 class="dropdown-content__title">Account</h3></a>
+                        <a href="#">Login</a>
+                        <a href="#">Sign up</a>
+                        <a href="#">Loyalty program</a>
+                        <a href="#">Track order</a>
+                    </div>
+                </div>
+
                 <li class="nav-item"><a class="nav-link" href="#"><img class="nav-img" src="assets/images/shopping-bag.png"></a></li>
             </ul>
         </div>

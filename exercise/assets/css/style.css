@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 body {
     background: khaki;
     margin: 5px;
     padding: 5px;
     background-size: contain;
+    background:#e5bcb8;
 }
 section {
     display: flex;
@@ -114,4 +114,23 @@ ol
 {
     padding: 2px;
 }
-#e5bcb8
+.custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    position: relative;
+}
+.custom input{
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0;
+}
+.tick{
+    background-color: 000;
+    height: 16px;
+    width: 16px;
+    opacity: 1;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+            body{
+                background: #da1b3d;
+            }
+            .heading{
+                color: #fffdff;
+                text-align: center;
+            }
+            .content{
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+            }
+            .ring{
+                margin: 0 auto;
+                height: 150px;
+                width: 150px;
+                /*background: transparent;*/
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                border: 5px solid #e95d78;
+                border-top: 5px solid #ffffff;
+                border-radius: 50%;
+                animation: animatecircle 2s linear infinite;
+            }
+            @keyframes animatecircle {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+            .circle{
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                margin: 10px;
+                border-radius: 100%;
+                background: #fffdff;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            .cir-1{
+                animation-name: Szoom;
+                animation-delay: 0.3s;
+            }
+            .cir-2{
+                animation-name: Mzoom;
+                animation-delay: 0.6s;
+            }
+            .cir-3{
+                animation-name: Lzoom;
+                animation-delay: 0.9s;
+            }
+            @keyframes Szoom {
+                0%   {transform: scale(1);}
+                50% {transform: scale(1.5);}
+                100% { transform: scale(1);}
+            }
+            @keyframes Mzoom {
+                0%   {transform: scale(1);}
+                50% {transform: scale(1.5);}
+                100% { transform: scale(1);}
+            }
+            @keyframes Lzoom {
+                0%   {transform: scale(1);}
+                50% {transform: scale(1.5);}
+                100% { transform: scale(1);}
+            }
+            /*
+            @keyframes zoom {
+                from {
+                width:20px;
+                height:20px;}
+                to {
+                height:50px;
+                width:50px;
+                }
+            }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Simple CSS Loading Indicators</h1>
+        <div class="ring">
+            <span class="ringcircle"></span>
+        </div>
+        <div class="content">
+            <span class="circle cir-1"></span>
+            <span class="circle cir-2"></span>
+            <span class="circle cir-3"></span>
+        </div>
+    </div>
+</body>
+</html>

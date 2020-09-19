@@ -86,6 +86,32 @@
                 width:50px;
                 }
             }*/
+            /* Rotating rainbow style loader used in login screen */
+        .multiring{
+                background-color: aquamarine;
+                margin: 0 auto;
+                height: 150px;
+                width: 150px;
+                transform: translate(-50%, -50%);
+                border-radius: 100%;
+                animation: animate 2s linear infinite;
+            }
+            @keyframes animate {
+                0%{ transform: rotate(0deg); }
+                100%{ transform: rotate(360deg); }
+            }
+        .ring-1{
+            border-radius: 50%;
+            border-left: 5px solid #e15b64;
+        }
+        .ring-2{
+            border-radius: 50%; 
+            border-left: 5px solid #f8b26a;
+        }
+        .ring-3{
+            border-radius: 50%; 
+            border-left: 5px solid #abbd81;
+        }
     </style>
 </head>
 <body>
@@ -99,6 +125,11 @@
             <span class="circle cir-2"></span>
             <span class="circle cir-3"></span>
         </div>
+    </div>
+    <div class="multiring">
+        <span class="ring ring-1"></span>
+        <span class="ring ring-2"></span>
+        <span class="ring ring-3"></span>
     </div>
 </body>
 </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000;
+        }
+        .container, .rainbow{
+            background-color: #fff;
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px 10px;
+            margin-top: 50px;
+        }
+        .rect{
+            background-color:#77d9a4;
+            display: inline-block;
+            padding: 80px 10px;
+            margin: 5px;
+            animation-duration: 1.2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .rect-1
+        {
+            animation-name: zoom1;
+            animation-delay: 0.2s;
+        }
+        .rect-2{
+            animation-name: zoom2;
+            animation-delay: 0.4s;
+        }
+        .rect-3{
+            animation-name: zoom3;
+            animation-delay: 0.6s;
+        }
+        .rect-4{
+            animation-name: zoom4;
+            animation-delay: 0.8s;
+        }
+        .rect-5{
+            animation-name: zoom5;
+            animation-delay: 1s;
+        }
+        @keyframes zoom1 {
+        0%   {transform: scale(1.5);}
+            /* 50% {transform: scale(1.5);} */
+            100% { transform: scale(1);}
+        }
+        @keyframes zoom2 {
+        0%   {transform: scale(1.5);}
+            /* 50% {transform: scale(1.5);} */
+            100% { transform: scale(1);}
+        }
+        @keyframes zoom3 {
+        0%   {transform: scale(1.5);}
+            /* 50% {transform: scale(1.5);} */
+            100% { transform: scale(1);}
+        }
+        @keyframes zoom4 {
+        0%   {transform: scale(1.5);}
+            /* 50% {transform: scale(1.5);} */
+            100% { transform: scale(1);}
+        }
+        @keyframes zoom5 {
+        0%   {transform: scale(1.5);}
+            /* 50% {transform: scale(1.5);} */
+            100% { transform: scale(1);}
+        }
+
+
+
+
+
+
+
+        /* Rotating rainbow style loader used in login screen */
+        /* .ring-1, .ring-2, .ring-3{
+                margin: 0 auto;
+                height: 150px;
+                width: 150px;
+                /*background: transparent;
+                border-radius: 50%; */
+                /* transform: translate(-50%, -50%);
+
+            }
+            
+             */
+
+
+
+
+
+
+            /* ring */
+            .ring{
+                display: inline-block;
+                height: 200px;
+                width: 200px;
+                margin: 2px;
+                border-radius: 50%;
+                animation: animate 2s linear infinite;
+            }
+            .ring-1{
+                border-top: 10px solid #e15b64;
+            }
+            .ring-2{
+                border-top: 10px solid #f8b26a;
+            }
+            .ring-3{
+                border-top: 10px solid #abbd81;
+            }
+            @keyframes animate {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="rect rect-1"></span>
+        <span class="rect rect-2"></span>
+        <span class="rect rect-3"></span>
+        <span class="rect rect-4"></span>
+        <span class="rect rect-5"></span>
+    </div>
+    <!-- Rotating rainbow style loader used in login screen -->
+    <div class="round">
+        <span class="ring ring-1">
+            <span class="ring ring-2">
+                <span class="ring ring-3"></span>
+            </span>
+        </span>
+</div>
+</body>
+</html>

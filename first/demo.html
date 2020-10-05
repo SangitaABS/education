@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        .section-sm {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+            border: 2px solid black;
+        }
+        /* Cards Section  */
+        .card_heading {
+            font-size: 400px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .card_image {
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        .card_content {
+            border: 2px solid green;
+            width: 50%;
+            position: relative;
+            z-index: 2;
+        }
+        .card_text{
+            padding: 20px 30px;
+            background-color: #fff;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+            width: calc(100% + 100px);
+            margin-left: -100px;
+        }
+        .card_info {
+            margin-bottom: 5px;
+        }
+        .card-reverse {
+            flex-direction: row-reverse;
+        }
+        .card-reverse .card_text{
+            margin-left: 0;
+        }
+
+    </style>
+</head>
+<body>
+        <!--  Cards Section -->
+
+        <section class="card-body section-sm">
+
+            <div class="container">
+                <!--  Cards Section 1 -->
+                <div class="card">
+                    <div class="card_image">
+                        <h1 class="card_heading">01</h1>
+                    </div>
+    
+                    <div class="card_content">
+                        <div class="card_text">
+                            <p class="card_info">I'll never forget the tone of the doctor's voice when he said those words
+                                to me over the phone. <br><br>
+                                I was told mom was making progress. So, I thought it was okay to leave just for a bit so I
+                                could go freshen up--seeing as I hadn't left mom's bedside for 3 days. But while I was out, 
+                                her health took a sudden turn for the worse... <br><br>
+                                She was alone, in a darkened hospital surrounded by cold monitors.</p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <!--  Cards Section 2 -->
+                <div class="card card-reverse">
+                    <div class="card_image">
+                        <h1 class="card_heading">02</h1>
+                    </div>
+    
+                    
+                    <div class="card_content">
+                        <div class="card_text">
+                            <p class="card_info">I cried over her body, apologizing over and over again. Apologizing for not 
+                                being there for her. Apologizing for leaving her side... <br><br>
+                                As I was crying, I remember gripping the heart pendant necklace around my neck, the necklace 
+                                mom gave me a week or so before she entered the hospital. <br><br>
+                                As I held it, it gave me a spirit of comfort, almost as if she was still there with me, telling me,
+                                "It's OK. I love you and I will always be with you." It was my only source of peace in that moment of pain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!--  Cards Section 3 -->
+                <div class="card">
+                    <div class="card_image">
+                        <h1 class="card_heading">03</h1>
+                    </div>
+    
+                    
+                    <div class="card_content">
+                        <div class="card_text">
+                            <p class="card_info">This timeless necklace is designed with a vibrant 6.5mm Cubic Zirconia inside 
+                                an open heart--symbolizing the one love, the one you miss, the one you'll never forget.</p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </section>   
+</body>
+</html>

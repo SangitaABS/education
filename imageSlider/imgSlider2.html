@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .slider {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            margin: auto;
+
+            .slide {
+                display: none;
+                height: 100%;
+                width: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    filter: contrast(90%);
+                    object-fit: cover;
+                }
+
+                .bannerContent {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 22px;
+                    color: #fff;
+                    padding: 8px 16px;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 4px;
+                }
+            }
+
+            a.prev,
+            a.next {
+                position: absolute;
+                top: 50%;
+                font-size: 30px;
+                cursor: pointer;
+                user-select: none;
+                color: #ffffff;
+                padding: 12px;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 3px;
+                }
+            }
+
+            .next {
+                right: 20px;
+            }
+
+            .prev {
+                left: 20px;
+            }
+        }
+
+        .show {
+            animation: fade 0.5s ease-out;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.5;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slide">
+            <img src="bg.jpeg" />
+            <div class="bannerContent">
+                <div class="bannerHead">
+                    <div class="bannertitle">
+                        <h2>
+                            Buy all best <strong class="strong">Oragnic</strong>
+                            Product For live <strong class="strong">heathly</strong>
+                        </h2>
+                    </div>
+                    <div class="bannerInfo">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora adipisci nesciunt placeat
+                            quibusdam aspernatur repellat sed hic reiciendis cum atque?
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <button class="getInfoBtn btn btn--primary">GET INFO</button>
+                    <button class="readMoreBtn btn btn--primary">READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="bg.jpeg" />
+            <div class="bannerContent">
+                <div class="bannerHead">
+                    <div class="bannertitle">
+                        <h2>
+                            Buy all best <strong class="strong">Oragnic</strong>
+                            Product For live <strong class="strong">heathly</strong>
+                        </h2>
+                    </div>
+                    <div class="bannerInfo">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora adipisci nesciunt placeat
+                            quibusdam aspernatur repellat sed hic reiciendis cum atque?
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <button class="getInfoBtn btn btn--primary">GET INFO</button>
+                    <button class="readMoreBtn btn btn--primary">READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="bg.jpeg" />
+            <div class="bannerContent">
+                <div class="bannerHead">
+                    <div class="bannertitle">
+                        <h2>
+                            Buy all best <strong class="strong">Oragnic</strong>
+                            Product For live <strong class="strong">heathly</strong>
+                        </h2>
+                    </div>
+                    <div class="bannerInfo">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora adipisci nesciunt placeat
+                            quibusdam aspernatur repellat sed hic reiciendis cum atque?
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <button class="getInfoBtn btn btn--primary">GET INFO</button>
+                    <button class="readMoreBtn btn btn--primary">READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <!-- buttons -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    <script src="imgslider2.js"></script>
+</body>
+
+</html>
